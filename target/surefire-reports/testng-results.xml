@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-05T22:58:39 SAMT" name="Surefire suite" finished-at="2023-05-05T22:58:39 SAMT" duration-ms="117">
+    <groups>
+    </groups>
+    <test started-at="2023-05-05T22:58:39 SAMT" name="Surefire test" finished-at="2023-05-05T22:58:39 SAMT" duration-ms="117">
+      <class name="ru.skillfactory.qajava.AppTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ru.skillfactory.qajava.AppTest@3c0a50da]" started-at="2023-05-05T22:58:39 SAMT" name="beforeClass" finished-at="2023-05-05T22:58:39 SAMT" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testSum(int, int, int)[pri:0, instance:ru.skillfactory.qajava.AppTest@3c0a50da]" started-at="2023-05-05T22:58:39 SAMT" name="testSum" data-provider="sumProvider" finished-at="2023-05-05T22:58:39 SAMT" duration-ms="23" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[void ru.skillfactory.qajava.AppTest.testSum(int,int,int)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testSum([Parameter{index=0, type=int, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}, Parameter{index=2, type=int, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10,(java.lang.Double) 30.4]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[void ru.skillfactory.qajava.AppTest.testSum(int,int,int)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testSum([Parameter{index=0, type=int, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}, Parameter{index=2, type=int, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10,(java.lang.Double) 30.4]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:905)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ru.skillfactory.qajava.AppTest@3c0a50da]" started-at="2023-05-05T22:58:39 SAMT" name="afterClass" finished-at="2023-05-05T22:58:39 SAMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ru.skillfactory.qajava.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
